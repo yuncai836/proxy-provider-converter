@@ -8,7 +8,7 @@ let host = "";
 if (typeof window !== "undefined") {
   host = window.location.origin;
 }
-
+export const runtime = "edge";
 export default function Home() {
   const [url, setUrl] = useState("");
   const [target, setTarget] = useState("clash");
