@@ -1,6 +1,6 @@
 const YAML = require("yaml");
 const axios = require("axios");
-export const runtime = 'edge';
+export const config = { runtime: 'edge' };
 module.exports = async (req, res) => {
   const url = req.query.url;
   const target = req.query.target;
